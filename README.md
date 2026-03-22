@@ -32,3 +32,10 @@ Utilização do Security Command Center (SCC) como ferramenta central de governa
 * **Cloud Provider:** Google Cloud Platform (GCP)
 * **Security Tools:** Security Command Center (SCC), Firewall Policies, Cloud IAM, IAP.
 * **Compute/Storage:** Compute Engine (Snapshots), Cloud Storage (Hardening), BigQuery.
+
+
+## ⚖️ Compliance Note
+As configurações demonstradas neste projeto foram implementadas seguindo os controlos de segurança do framework **PCI DSS 3.2.1**. 
+
+* **Requirement 7:** A restrição de acesso via IAM e a implementação de **Uniform Access Control** nos buckets garantem que o acesso aos dados do titular do cartão seja restrito ao estritamente necessário (Need-to-know).
+* **Requirement 10:** A ativação de **VPC Firewall Logging** e **Cloud Logging** assegura a monitorização e o rastreio de todos os acessos aos recursos de rede e dados sensíveis, permitindo uma resposta rápida a incidentes.
