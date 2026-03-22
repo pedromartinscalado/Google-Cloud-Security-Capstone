@@ -10,8 +10,6 @@ A fase de resposta focou-se na contenção imediata e análise forense de artefa
 
 * **Detecção:** Identificação de exfiltração de dados no BigQuery e comunicação com domínios maliciosos via Security Command Center.
 ![SCC Findings](evidences/2.jpg)
-* **Análise Forense:** Utilização de técnicas de processamento de imagem (Nitidez e Níveis) para recuperar timestamps de logs que estavam ilegíveis, garantindo a integridade da timeline do incidente.
-![Forensic Analysis](evidences/image_f5dca7.jpg)
 * **Contenção:** Restrição de acesso SSH via Identity-Aware Proxy (IAP) e encerramento de instâncias comprometidas.
 * **Erradicação:** Remoção de VMs infectadas com malware e eliminação de regras de firewall "allow-all".
 * **Recuperação:** Restauração de serviços críticos utilizando snapshots de Compute Engine com Secure Boot ativado.
@@ -20,9 +18,9 @@ A fase de resposta focou-se na contenção imediata e análise forense de artefa
 Implementação de controlos de segurança preventivos para reduzir a superfície de ataque.
 
 * **VPC Firewall Logging:** Configuração de regras de firewall restritivas e ativação de logs de fluxo para detecção de movimentos laterais na rede.
-![Firewall Hardening](evidences/1.jpg)
+![Firewall Hardening](evidences/1.png)
 * **Cloud Storage Security:** Conversão de buckets para **Uniform Access Control** e revogação de todas as permissões públicas (`allUsers`), assegurando a privacidade dos dados sensíveis.
-![Bucket Security](evidences/3.jpg)
+![Bucket Security](evidences/3.png)
 * **Identity-Aware Proxy (IAP):** Eliminação de dependências de IPs públicos para acessos administrativos.
 
 ### 3. Compliance & Monitoring
